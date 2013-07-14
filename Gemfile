@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 1.2'
 
 group :development, :test do
   gem 'rspec-rails',      ">= 2.0.0.beta"
+  gem 'webrat'
 end
 
 # Use ActiveModel has_secure_password
@@ -42,3 +43,7 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'guard-spork', '1.4.2'
+
+

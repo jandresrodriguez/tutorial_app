@@ -27,12 +27,9 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-group :development do
-  gem 'rspec-rails', '2.0.0.beta.18'
-end
-
-group :test do
-  gem 'rspec', '2.0.0.beta.18'
+group :development, :test do
+  gem 'rspec-rails',      ">= 2.0.0.beta"
+  gem 'webrat'
 end
 
 # Use ActiveModel has_secure_password
@@ -46,3 +43,7 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'guard-spork', '1.4.2'
+
+
