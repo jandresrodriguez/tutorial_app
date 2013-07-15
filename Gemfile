@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -28,6 +28,10 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 group :development, :test do
+  gem 'sqlite3'
+  gem 'protected_attributes'
+  gem 'annotate'
+  gem 'autotest'
   gem 'rspec-rails',      ">= 2.0.0.beta"
   gem 'webrat'
 end
@@ -45,5 +49,9 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'guard-spork', '1.4.2'
+
+group :production, :staging do
+  gem 'pg'
+end
 
 
